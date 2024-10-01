@@ -1,0 +1,20 @@
+{
+  "name": "ean-13_generator",
+  "version": "1.0.0",
+  "description": "Tool to generate barcodes using the EAN-13 guidelines ",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psikoo/EAN-13_generator.git"
+  },
+  "author": "psikoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psikoo/EAN-13_generator/issues"
+  },
+  "homepage": "https://github.com/psikoo/EAN-13_generator#readme"
+}
