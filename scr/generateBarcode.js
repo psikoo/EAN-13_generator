@@ -7,7 +7,7 @@ export function generateBarcode(barcode) {
     let barcodeLeftSide = new Array(42);
     let barcodeMid = [0,1,0,1,0];
     let barcodeRightSide = new Array(42);
-    //Convert number to binary applaying mask
+    //Convert number to binary applying mask
     let mask = firstDigitLookUp(barcodeFirstDigit);
     let barcodeDigitsBinary = "";
     for(let i = 0; i<barcodeDigits.length; i++) {
@@ -31,7 +31,7 @@ export function generateBarcode(barcode) {
     return barcodeBin;
 }
 
-function firstDigitLookUp(number) { //Retuens the mask to be used when converting the numbers to binary
+function firstDigitLookUp(number) { //Returns the mask to be used when converting the numbers to binary
     if(number==0) {
         return "LLLLLLRRRRRR";
     } else if(number==1) {

@@ -1,4 +1,4 @@
-export function checkBarcode(barcode) { //Calculate and check checksum diggit based on https://www.gs1.org/services/how-calculate-check-digit-manually
+export function checkBarcode(barcode) { //Calculate and check checksum digit based on https://www.gs1.org/services/how-calculate-check-digit-manually
     let barcode12Digits = barcode.substring(0,12);
     let sum = 0;
     for(let i = 0; i < barcode12Digits.length; i++) {
