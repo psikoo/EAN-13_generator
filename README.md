@@ -7,7 +7,7 @@ EAN-13 generator is a small JavaScript script that generates EAN-13 barcodes fro
 
 **Usage information:**
 
-This script runs with Node.js and npm. To runn the script you must install Node.js and npm.
+This script runs with Node.js and npm. To run the script you must install Node.js and npm.
 
 **Before running:**
 
