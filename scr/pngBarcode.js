@@ -2,6 +2,7 @@ import sharp from "sharp";
 import fs from "fs";
 
 export async function pngBarcode(barcodeBinary, height, name) { //Main funciton
+    fs.mkdirSync("output");
     await generatePNG("tmp.png", height);
     await editPixels("tmp.png", barcodeBinary)
     await cutPNG("tmp.png", height, name)
