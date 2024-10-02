@@ -21,6 +21,7 @@ npm install
 
 **start.cmd:**
 Generates a png for the given barcode number (it stores the .png in the /output file).
+
 **(The outputFileName must end in .png)**
 ```bash
 .\start.cmd {barcodeNumber} {barcodeHeight} {outputFileName}
