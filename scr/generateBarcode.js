@@ -31,7 +31,7 @@ export function generateBarcode(barcode) {
     return barcodeBin;
 }
 
-function firstDigitLookUp(number) {
+function firstDigitLookUp(number) { //Retuens the mask to be used when converting the numbers to binary
     if(number==0) {
         return "LLLLLLRRRRRR";
     } else if(number==1) {
@@ -55,7 +55,7 @@ function firstDigitLookUp(number) {
     }
 }
 
-function DigitLookUp(number, mode) {
+function DigitLookUp(number, mode) { //Converts numbers to binary based on the given mask
     if(number==0) {
         if(mode=="L") {
             return "0001101";

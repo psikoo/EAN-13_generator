@@ -1,10 +1,17 @@
+import { checkBarcode } from "./checkBarcode.js";
 import { generateBarcode } from "./generateBarcode.js";
 import { pngBarcode } from "./pngBarcode.js";
 
-// get barcode from cmd
-console.log("> barcode: "+process.argv[2]);
-let barcodeBinary = generateBarcode(process.argv[2]);
-console.log(barcodeBinary);
-pngBarcode(generateBarcode);
-
-//TODO create a funcition to calculate checksum to see if the barcode is valid before everything
+let barcode = process.argv[2];
+let height = process.argv[3];
+let name = process.argv[4];
+//Checksum barcode
+console.log(checkBarcode(barcode));
+console.log("> Barcode: "+barcode);
+console.log("> Height: "+height);
+//Generate barcode binary
+let barcodeBinary = generateBarcode(barcode);
+console.log("> Barcode binary: "+barcodeBinary);
+//Create barcode PNG
+pngBarcode(barcodeBinary, parseInt(height), name);
+console.log("> Barcode generated: ./output/"+name);
