@@ -1,2 +1,2 @@
 @echo off
-node .\scr\main.js %1 %2 %3
+node .\src\main.js %1 %2 %3
